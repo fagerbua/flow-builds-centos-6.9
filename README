@@ -1,1 +1,1 @@
-Binary distributions of Facebook's Flow typechecker. The Linux binary is built on CentOS 6.9, other binaries are identical to the official builds.
+Binary distribution of Facebook's Flow typechecker for Linux. Built on CentOS 6.9, tested on RHEL 6.9, which may not be able to run the official binary.
