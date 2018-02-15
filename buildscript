@@ -7,9 +7,11 @@ wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh 
 opam init --comp 4.03.0
 eval `opam config env`
 opam update
-opam install -y ocamlfind sedlex
+opam install -y ocamlfind sedlex wtf8 dtoa lwt
 git clone https://github.com/facebook/flow
 cd flow
-git checkout v0.50
+git checkout v0.65
 make
-// then extract the binary
+
+// outside the Docker shell
+docker cp <CONTAINER_ID>:/flow/bin/flow .
