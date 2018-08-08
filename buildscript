@@ -1,4 +1,4 @@
-// TODO: make a proper Dockerfile or similar
+// TODO: make this a Dockerfile
 
 docker run -it centos:6.9 bash
 // inside the Docker shell
@@ -10,7 +10,7 @@ opam update
 opam install -y --deps-only flowtype
 git clone https://github.com/facebook/flow
 cd flow
-git checkout v0.74
+git checkout v0.78
 make
 
 // outside the Docker shell
